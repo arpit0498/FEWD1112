@@ -1,66 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Embed multimedia</title>
-    <link rel="stylesheet" href="./Assets/Css/index.css" />
+    <style>
+      div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <div>
-        <!-- Logo image with annotated caption -->
-        <figure>
-          <img
-            src="./Assets/Images/restaurant-logo.jpg"
-            alt="cafe-logo"
-            width="25%"
-            height="50%"
-          />
-          <figcaption>Logo of the restaurant</figcaption>
-        </figure>
-      </div>
-      <!-- All images of menu item on the basis of increasing sizes -->
-      <div class="menu">
-        <h1>Our Menu</h1>
-        <h2>Rajma rice</h2>
-        <img
-          src="./Assets/Images/rajma-rice.jpg"
-          alt="rajma-rice"
-          width="100px"
-          height="120px"
-        />
-        <p>Chickpea, herbs, spices.</p>
+    <!-- How do we put an image on a webpage?
+Alternative text
+Width and height
+Image titles -->
 
-        <h2>Pasta Salad</h2>
+    <h1>Photo gallery</h1>
+    <div class="gallery">
+      <a target="_blank" href="./Assets/Images/img_5terre.jpg">
         <img
-          src="./Assets/Images/pasta.jpg"
-          alt="pasta"
-          width="200px"
-          height="220px"
+          src="./Assets/Images/img_5terre.jpg"
+          alt="Cinque Terre"
+          width="600"
+          height="400"
         />
-        <p>Pasta, vegetables, mozzarella.</p>
-        <h2>Fried rice</h2>
-        <img
-          src="./Assets/Images/fried-rice.jpg"
-          alt="fried-rice"
-          width="300px"
-          height="320px"
-        />
-        <p>Authentic rice with mix veggies</p>
-      </div>
+      </a>
     </div>
-    <p class="decoration">
-      If an image has meaning, in terms of your content, you should use an HTML
-      image. If an image is purely decoration, you should use CSS background
-      images. like this cream background is an image with css property and the
-      above menu items has images with html tag
-    </p>
 
-    <!-- footer -->
-    <footer>
-      <p>Copyright &copy; 2022</p>
-    </footer>
+    <div class="gallery">
+      <a target="_blank" href="./Assets/Images/img_forest.jpg">
+        <img
+          src="./Assets/Images/img_forest.jpg"
+          alt="Forest"
+          width="600"
+          height="400"
+        />
+      </a>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="./Assets/Images/img_mountains.jpg">
+        <img
+          src="./Assets/Images/img_mountains.jpg"
+          alt="Northern Lights"
+          width="600"
+          height="400"
+        />
+      </a>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="./Assets/Images/img_lights.jpg">
+        <img
+          src="./Assets/Images/img_lights.jpg"
+          alt="Mountains"
+          width="600"
+          height="400"
+        />
+      </a>
+    </div>
+    <!-- <h2>Use of alt text</h2> -->
+    <div class="gallery">
+      <a target="_blank" href="https://www.example.com/images/dinosaur.jpg">
+        <img
+          src="https://www.example.com/images/dinosaur.jpg"
+          alt="The head and torso of a dinosaur skeleton;
+          it has a large head with long sharp teeth"
+          width="600px"
+          height="400px"
+        />
+      </a>
+    </div>
   </body>
 </html>
